@@ -1,0 +1,106 @@
+/** Add any CSS you need to this file. */
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Lato|Overpass&display=swap');
+
+html,body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Overpass', sans-serif;
+    background-image: url("./images/contact_bg.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#form-container {
+    padding: 3em 4em 1em 4em;
+    display: flex;
+    background-color: white;
+    box-sizing: border-box;
+    margin: 3em 32em;
+    height: auto;
+    width: 32em;
+    border-radius: 5px;
+}
+
+#form-container .form-control{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 15px;
+    overflow: visible;
+    text-align: left;
+    width: 100%;
+}
+
+#form-container .row {
+    display: flex;
+    flex-direction: row;
+}
+
+#form-container .city, .postal, .country, #number {
+    width: 40%;
+}
+
+#form-container .province {
+    width: 20%;
+}
+
+#form-container input, textarea {
+    padding: 0.4em;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+#form-container input:focus, textarea:focus, button:focus {
+    outline: none;
+}
+
+#form-container .required {
+    font-size: 0.8em;
+}
+
+#form-container textarea {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#form-container .phone {
+    margin-bottom: 0;
+}
+
+#form-container .button {
+    padding: 1.0em;
+    background-color: #040402;
+    color: white;
+    border: none;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#form-container .button:hover {
+    color: #040402;
+    background-color: white;
+    border: 1px solid #040402;
+}
+
+#form-container .city {
+    margin-right: 3.5em;
+}
+
+#form-container .postal {
+    margin-right: 2em;
+}
+
+.contact-us {
+    background-color: white;
+}
+
+.active {
+    border-bottom: 1px white solid;
+}

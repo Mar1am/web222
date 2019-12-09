@@ -1,0 +1,321 @@
+/** Add any CSS you need to this file. */
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Lato|Overpass&display=swap');
+
+html,body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Overpass', sans-serif;
+}
+
+header {
+    background-image: url("./images/header3.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#top-nav {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Lato', sans-serif;
+    justify-content: space-between;
+    height: 15%;
+    position: static;
+    padding: 0 2em;
+}
+
+#top-nav h1{
+    flex: 3;
+    padding: 1em;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+a {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.main-nav-items {
+    flex: 5;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-nav-items li {
+    text-align: center;
+    padding: 1.7em;
+    float: left;
+    flex: 2;
+    margin: 0 1em;
+}
+
+
+.main-nav-items li:hover {
+    border-bottom: 1px white solid;
+}
+
+
+.contact {
+    border: 1px white solid;
+    border-radius: 3px;
+    padding-top: 27px;
+}
+
+#website-caption {
+    color: white;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 1.5em;
+    padding: 4em 2.7em;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.grid-container {
+    display: flex;
+    height: 100%;
+}
+
+.section-heading {
+    font-family: 'Lato', sans-serif;
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.3em;
+    padding: 1em;
+}
+
+.grid-container .sidebar {
+    flex: 0.5;
+    background-color: #040402;
+    width: 0;
+    margin-right: 1em;
+}
+
+.grid-container .sidebar .sidebar-nav-items {
+    position: relative;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.contact a:hover {
+    color: #040402;
+
+}
+
+.sidebar-nav-items .nav-item {
+    color: white;
+    cursor: pointer;
+    float: left;
+    flex: 2;
+    font-family: 'Overpass', sans-serif;
+    padding: 1em;
+    background: transparent;
+    border: none;
+    font-size: 1em;
+}
+
+.sidebar-nav-items .nav-item:hover {
+    border-right: 3px solid #d08d3c;
+    color:#d08d3c;
+}
+
+.sidebar-nav-items .nav-item:focus {
+    outline: none;
+}
+
+.contact:hover {
+    background-color: white;
+    color: #040402;
+}
+
+
+.items-grid {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+}
+
+.items-grid .item-row {
+    height: 100%;
+    flex: 3;
+    display: flex;
+}
+
+.items-grid .item-row .item {
+    flex: 1;
+    margin: 0 1em 2em 1em;
+    height: 100%;
+}
+
+.items-grid .item-row .item:last-child {
+    margin-right: 2em;
+}
+
+.items-grid .item-row .item .img-container {
+    height: 75%;
+    width: 75%;
+    padding: 0 3em;
+    position: relative;
+}
+
+.items-grid .item-row .item .img-container img {
+    height: 100%;
+    width: 100%;
+}
+
+.item .buy-button {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    right: 48px;
+}
+
+.buy-button button {
+    padding: 0.8em;
+    width: 6.5em;
+    background-color: #040402;
+    border: none;
+    color: white;
+    font-size: 1em;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+}
+
+.img-container:hover .buy-button {
+    display: block;
+}
+
+.item-info {
+    padding: 0 3em;
+}
+
+.item-info .item-name {
+    margin-bottom: 0;
+}
+
+.item-info .item-description {
+    margin-top: 0;
+}
+
+#makeup-banner {
+    height: 31em;
+    background-image: url("./images/makeup_header.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#perfume-banner {
+    height: 30em;
+    background-image: url("./images/perfume_2.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+footer {
+    flex: 3;
+    display: flex;
+    height: auto;
+    background-color: #040402;
+    color: white;
+}
+
+footer #store-name{
+    flex: 1;
+}
+
+#store-name h3 {
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    padding: 2em 6.5em;
+}
+
+footer #contact-info {
+    padding: 4em 8em;
+    line-height: 1.7em;
+}
+
+#subscription {
+    padding: 4em 5em 2em 5em;
+    font-size: 1.2em;
+}
+
+#subscription h4 {
+    margin: 0;
+    font-weight: 200;
+}
+
+#subscription p {
+    margin: 0;
+    padding-top: 0.5em;
+    font-size: smaller;
+}
+
+#form {
+    padding: 1em 0;
+}
+
+#form #email {
+    padding: 0.5em;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    margin-right: 10px;
+}
+
+#form #email:focus {
+    outline: none;
+}
+
+#form #button {
+    border-radius: 3px;
+    border: 1px solid white;
+    background-color: #040402;
+    color: white;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    margin-left: 3px;
+}
+
+#form #button:hover {
+    color: #040402;
+    background-color: white;
+}
+
+#copyright {
+    flex: 2;
+    background-color: #040402;
+    height: 3em;
+    margin-bottom: 0;
+}
+
+#copyright h5 {
+    color: white;
+    font-weight: 200;
+    text-align: center;
+    font-size: 0.8em;
+    margin: 0;
+}
+
+.show {
+    display: block;
+}
