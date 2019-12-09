@@ -86,95 +86,11 @@
           <div class="grid-container">
             <div class="sidebar">
               <ul class="sidebar-nav-items">
-                <button class="nav-item" onclick="filterSelection('regular')">Regular</button>
-                <button class="nav-item">Naturals</button>
+                <button class="nav-item" data-filter="regular" onclick="filterSelection('regular')">Regular</button>
+                <button class="nav-item" data-filter="naturals">Naturals</button>
               </ul>
             </div>
-            <div class="items-grid">
-              <div class="item-row naturals">
-                <div class="item">
-                  <div class="img-container">
-                    <div class="buy-button">
-                        <button><a href="#">Buy</a></button>
-                    </div>
-                    <img src="images/skincare/naturals_1.jpg" alt="">
-                  </div>
-                  <div class="item-info">
-                    <h3 class="item-name">The Renaissance Circle</h3>
-                    <p class="item-description">Mango Mask <br>
-                    <span class="item-price">$5.99</span></p>
-                  </div>
-                </div>
-                <div class="item">
-                    <div class="img-container">
-                      <div class="buy-button">
-                          <button><a href="#">Buy</a></button>
-                      </div>
-                      <img src="images/skincare/naturals_2.jpg" alt="">
-                    </div>
-                    <div class="item-info">
-                      <h3 class="item-name">Shops of Youth</h3>
-                      <p class="item-description">Herbal Sheet Mask<br>
-                      <span class="item-price">$8.99</span></p>
-                    </div>
-                </div>
-                <div class="item">
-                      <div class="img-container">
-                        <div class="buy-button">
-                            <button><a href="#">Buy</a></button>
-                        </div>                        
-                        <img src="images/skincare/naturals_3.jpg" alt="">
-                      </div>
-                      <div class="item-info">
-                        <h3 class="item-name">Vya Naturals</h3>
-                        <p class="item-description">Vitamin C Serum<br>
-                        <span class="item-price">$7.99</span></p>
-                      </div>
-                </div>
-
-              </div>
-              <div class="item-row regulars">
-                  <div class="item">
-                    <div class="img-container">
-                      <div class="buy-button">
-                          <button><a href="#">Buy</a></button>
-                      </div>
-                      <img src="images/skincare/regular_1.jpg" alt="">
-                    </div>
-                    <div class="item-info">
-                      <h3 class="item-name">I'm Fabulous</h3>
-                      <p class="item-description">St. Barth Body Oil<br>
-                      <span class="item-price">$12.99</span></p>
-                    </div>
-                  </div>
-                  <div class="item">
-                      <div class="img-container">
-                        <div class="buy-button">
-                            <button><a href="#">Buy</a></button>
-                        </div>
-                        <img src="images/skincare/regular_2.jpg" alt="">
-                      </div>
-                      <div class="item-info">
-                        <h3 class="item-name">Therapeutic CBD</h3>
-                        <p class="item-description">Skin Balm<br>
-                        <span class="item-price">$14.99</span></p>
-                      </div>
-                  </div>
-                  <div class="item">
-                        <div class="img-container">
-                          <div class="buy-button">
-                              <button><a href="#">Buy</a></button>
-                          </div>                        
-                          <img src="images/skincare/regular_3.jpg" alt="">
-                        </div>
-                        <div class="item-info">
-                          <h3 class="item-name">The Brandless Company</h3>
-                          <p class="item-description">Facial Toner + Wipes<br>
-                          <span class="item-price">$16.99</span></p>
-                        </div>
-                  </div>
-                </div>
-            </div>
+            <div class="items-grid"></div>
           </div>
         </section>
 
@@ -183,94 +99,11 @@
         <section id="makeup">
           <h2 class="section-heading">COSMETICS</h2>
           <div class="grid-container">
-            <div class="items-grid">
-              <div class="item-row makeup-single">
-                <div class="item">
-                  <div class="img-container">
-                    <div class="buy-button">
-                      <button><a href="#">Buy</a></button>
-                    </div>
-                    <img src="images/skincare/makeup_1.jpg" alt="">
-                  </div>
-                  <div class="item-info">
-                    <h3 class="item-name">Bourjois Rouge Edition'</h3>
-                    <p class="item-description">Velvet Lipstick<br>
-                    <span class="item-price">$9.96</span></p>
-                  </div>
-                </div>
-                <div class="item">
-                    <div class="img-container">
-                      <div class="buy-button">
-                          <button><a href="#">Buy</a></button>
-                      </div>
-                      <img src="images/skincare/makeup_2.jpg" alt="">
-                    </div>
-                    <div class="item-info">
-                      <h3 class="item-name">BECCA Ultimate</h3>
-                      <p class="item-description">Coral Pink Lipstick<br>
-                      <span class="item-price">$32.00</span></p>
-                    </div>
-                </div>
-                <div class="item">
-                      <div class="img-container">
-                        <div class="buy-button">
-                            <button><a href="#">Buy</a></button>
-                        </div>
-                        <img src="images/skincare/makeup_3.jpg" alt="">
-                      </div>
-                      <div class="item-info">
-                        <h3 class="item-name">Shavova Professional</h3>
-                        <p class="item-description">Foundation<br>
-                        <span class="item-price">$14.99</span></p>
-                      </div>
-                </div>
-              </div>
-              <div class="item-row makeup-giftset">
-                  <div class="item">
-                    <div class="img-container">
-                      <div class="buy-button">
-                        <button><a href="#">Buy</a></button>
-                      </div>
-                      <img src="images/skincare/bobby_brown_makeup_set.jpg" alt="">
-                    </div>
-                    <div class="item-info">
-                      <h3 class="item-name">Bobby Brown Makeup Set'</h3>
-                      <p class="item-description">13 pc Set<br>
-                      <span class="item-price">$49.99</span></p>
-                    </div>
-                  </div>
-                  <div class="item">
-                      <div class="img-container">
-                        <div class="buy-button">
-                            <button><a href="#">Buy</a></button>
-                        </div>
-                        <img src="images/skincare/brandless_brush_Set.jpg" alt="">
-                      </div>
-                      <div class="item-info">
-                        <h3 class="item-name">The Brandless Company</h3>
-                        <p class="item-description">4pc Makeup Brush Set<br>
-                        <span class="item-price">$25.99</span></p>
-                      </div>
-                  </div>
-                  <div class="item">
-                        <div class="img-container">
-                          <div class="buy-button">
-                              <button><a href="#">Buy</a></button>
-                          </div>
-                          <img src="images/skincare/chanel_set.jpg" alt="">
-                        </div>
-                        <div class="item-info">
-                          <h3 class="item-name">Chanel Cosmetic Set</h3>
-                          <p class="item-description">Makeup Gift Set<br>
-                          <span class="item-price">$45.99</span></p>
-                        </div>
-                  </div>
-                </div>
-            </div>
+            <div class="items-grid"></div>
             <div class="sidebar">
                 <ul class="sidebar-nav-items">
-                    <button class="nav-item">Regular</button>
-                    <button class="nav-item">Gift Sets</button>
+                    <button class="nav-item" data-filter="regular">Regular</button>
+                    <button class="nav-item" data-filter="gift-sets">Gift Sets</button>
                 </ul>
             </div>
           </div>
@@ -283,52 +116,10 @@
           <div class="grid-container">
             <div class="sidebar">
               <ul class="sidebar-nav-items">
-                <button class="nav-item">Exclusive</button>
+                <button class="nav-item" data-filter="exclusive">Exclusive</button>
               </ul>
             </div>
-            <div class="items-grid">
-              <div class="item-row perfumes">
-                <div class="item">
-                  <div class="img-container">
-                    <div class="buy-button">
-                      <button><a href="#">Buy</a></button>
-                    </div>
-                    <img src="images/skincare/perfumes_1.jpg" alt="">
-                  </div>
-                  <div class="item-info">
-                    <h3 class="item-name">Georgio Armani</h3>
-                    <p class="item-description">SUN di Gioia<br>
-                    <span class="item-price">$105.00</span></p>
-                  </div>
-                </div>
-                <div class="item">
-                    <div class="img-container">
-                      <div class="buy-button">
-                        <button><a href="#">Buy</a></button>
-                      </div>
-                      <img src="images/skincare/perfumes_2.jpg" alt="">
-                    </div>
-                    <div class="item-info">
-                      <h3 class="item-name">CHANEL Paris</h3>
-                      <p class="item-description">Gabrielle<br>
-                      <span class="item-price">$135.00</span></p>
-                    </div>
-                </div>
-                <div class="item">
-                      <div class="img-container">
-                        <div class="buy-button">
-                          <button><a href="#">Buy</a></button>
-                        </div>
-                        <img src="images/skincare/perfumes_3.jpg" alt="">
-                      </div>
-                      <div class="item-info">
-                        <h3 class="item-name">L'Eau Laurissi</h3>
-                        <p class="item-description">Perfume<br>
-                        <span class="item-price">$152.00</span></p>
-                      </div>
-                </div>
-              </div>
-            </div>
+            <div class="items-grid"></div>
           </div>
         </section>
       </main>
