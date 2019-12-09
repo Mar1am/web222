@@ -33,14 +33,14 @@ $(document).ready(() => {
                     description: 'St. Barth Body Oil',
                     price: '$12.99',
                     image: './images/skincare/regular_1.jpg',
-                    tags: [ "natural" ],
+                    tags: [ "naturals" ],
                 },
                 {
                     name: 'Therapeutic CBD',
                     description: 'Skin Balm',
                     price: '$14.99',
                     image: './images/skincare/regular_2.jpg',
-                    tags: [ "natural" ],
+                    tags: [ "naturals" ],
                 },
                 {
                     name: 'The Brandless Company',
@@ -105,7 +105,8 @@ $(document).ready(() => {
                     name: 'CHANEL Paris',
                     description: 'Gabrielle',
                     price: '$135.00',
-                    image: './images/skincare/perfumes_2.jpg'
+                    image: './images/skincare/perfumes_2.jpg',
+                    tags: [ "regular" ],
                 },
                 {
                     name: 'L Eau Laurissi',
@@ -122,9 +123,9 @@ $(document).ready(() => {
         console.log(product.category);
     
         var container = $("#"+product.category+" .items-grid")[0];
-
-        console.log($(container));
+        var cards = [];
     
+        // iterate over each item in the category and dynamically add to the DOM
         product.items.forEach((item, itemIndex) => {
             var productCard = $("<div></div>").addClass("item");
     
@@ -146,64 +147,35 @@ $(document).ready(() => {
             $(itemInfoContainer).append($("<p></p>").addClass("item-description").text(item.description));
             $(itemInfoContainer).append($("<span></span>").addClass("item-price").text(item.price));
             $(productCard).append($(itemInfoContainer)).data("data", item);
-
-            console.log($(productCard).data("data"));
     
+            // add the item to the container
             $(container).append($(productCard));
+            cards.push($(productCard));
+        });
+
+        // register sidebar nav for this category to filter when clicked
+        $("#"+product.category+" .nav-item").click(function(e) {
+            e.preventDefault();
+            filterProducts($(this).data("filter"), cards);
         });
     });
 
+    /**
+     * Filters the given products by the specified criteria.
+     * 
+     * @param {string} criteria 
+     * @param {array} products 
+     */
     let filterProducts = (criteria, products) => {
         products.forEach((product, index) => {
             var data = $(product).data("data");
-
             if(criteria == "all") {
                 $(product).show();
-            } else if(!data.tags.includes(criteria)) {
+            } else if(data.tags.includes(criteria)) {
+                $(product).show();
+            } else {
                 $(product).hide();
             }
         });
     };
-    
-    
-    
-    
-    
-    function filterItems(criteria) {
-        var card, i;
-        card = document.querySelectorAll('item-row');
-        if(criteria === "all") {
-            criteria = "";
-        }
-    
-        for(i = 0; i < card.length; i++) {
-            removeCard(card[i], "show");
-            if(card[i].className.indexOf(criteria) > -1) {
-                addCard(card[i], "show");
-            }
-        }
-    }
-    
-    function addClass(element, className) {
-        var i, arr1, arr2;
-        arr1 = element.className.split(" ");
-        arr2 = className.split(" ");
-        for(i = 0; i < arr2.length; i++) {
-            if(arr1.indexOf(arr2[i]) === -1) {
-                element.className += " " + arr2[i];
-            }
-        }
-    }
-    
-    function removeClass(element, className) {
-        var i, arr1, arr2;
-        arr1 = element.className.split(" ");
-        arr2 = className.split(" ");
-        for(i = 0; i < arr2.length; i++) {
-            while (arr1.indexOf(arr2[i]) > -1) {
-               arr1.splice(arr1.indexOf(arr2[i]), 1);
-            }
-        }
-        element.className = arr1.join(" ");
-    }
 });

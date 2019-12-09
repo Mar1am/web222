@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <title>WEB222 Store</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <!--
@@ -63,94 +63,119 @@
         - https://fontawesome.com/ for icons
         - https://gallery.manypixels.co/ or https://undraw.co/illustrations for illustrations (SVG)
       -->
-      <header>
-        <nav id="top-nav">
-            <h1><a href="./index.html">Mariam's Spa</a></h1>
-          <ul class="main-nav-items">
-            <li><a href="#skincare">Skincare</a></li>
-            <li><a href="#makeup-banner">Cosmetics</a></li>
-            <li><a href="#perfume-banner">Perfumes</a></li>
-            <li class="contact"><a href="contact.html">Get in Touch!</a></li>
-          </ul>
-        </nav>
-        <section id="website-caption">
-          <p>Beautiful skin requires commitment, not a miracle. <br>
-            Mariam's Spa is here to help you fulfill your commitment.
-          </p>
-        </section>
-      </header>
-          
-      <main>
-        <section id="skincare">
-          <h2 class="section-heading">Skincare Products</h2>
-          <div class="grid-container">
-            <div class="sidebar">
-              <ul class="sidebar-nav-items">
-                <button class="nav-item" data-filter="regular" onclick="filterSelection('regular')">Regular</button>
-                <button class="nav-item" data-filter="naturals">Naturals</button>
-              </ul>
-            </div>
-            <div class="items-grid"></div>
-          </div>
-        </section>
-
-        <section id="makeup-banner">
-        </section>
-        <section id="makeup">
-          <h2 class="section-heading">COSMETICS</h2>
-          <div class="grid-container">
-            <div class="items-grid"></div>
-            <div class="sidebar">
-                <ul class="sidebar-nav-items">
-                    <button class="nav-item" data-filter="regular">Regular</button>
-                    <button class="nav-item" data-filter="gift-sets">Gift Sets</button>
+        <header>
+            <nav id="top-nav">
+                <h1><a href="./index.html">Mariam's Spa</a></h1>
+                <ul class="main-nav-items">
+                    <li><a href="#skincare">Skincare</a></li>
+                    <li><a href="#makeup-banner">Cosmetics</a></li>
+                    <li><a href="#perfume-banner">Perfumes</a></li>
+                    <li class="contact">
+                        <a href="contact.html">Get in Touch!</a>
+                    </li>
                 </ul>
-            </div>
-          </div>
-        </section>
+            </nav>
+            <section id="website-caption">
+                <p>
+                    Beautiful skin requires commitment, not a miracle. <br />
+                    Mariam's Spa is here to help you fulfill your commitment.
+                </p>
+            </section>
+        </header>
 
-        <section id="perfume-banner">
-          </section>
-        <section id="perfumes">
-          <h2 class="section-heading">PERFUMES</h2>
-          <div class="grid-container">
-            <div class="sidebar">
-              <ul class="sidebar-nav-items">
-                <button class="nav-item" data-filter="exclusive">Exclusive</button>
-              </ul>
-            </div>
-            <div class="items-grid"></div>
-          </div>
-        </section>
-      </main>
+        <main>
+            <section id="skincare">
+                <h2 class="section-heading">Skincare Products</h2>
+                <div class="grid-container">
+                    <div class="sidebar">
+                        <ul class="sidebar-nav-items">
+                            <button class="nav-item" data-filter="all">
+                                All
+                            </button>
+                            <button class="nav-item" data-filter="regular">
+                                Regular
+                            </button>
+                            <button class="nav-item" data-filter="naturals">
+                                Naturals
+                            </button>
+                        </ul>
+                    </div>
+                    <div class="items-grid"></div>
+                </div>
+            </section>
 
-      <footer>
-        <div id="store-name">
-          <h3>Mariam's Spa</h3>
-        </div>
-        <div id="contact-info">
-          <p>
-            123, Queen St. <br>
-            Victoria Avenue East <br>
-            Toronto, ON <br>
-            M4E 1J3 
-          </p>
-        </div>
-        <div id="subscription">
-          <h4>Subscribe to our Newletter!</h4>
-          <p>Don't miss out on the exclusive offers and deals</p>
-          <form action="https://formspree.io/mbjlakoz" method="POST" id="form" name="form">
-            <div class="content">
-              <input type="email" name="email" id="email" size="50">
-              <button type="submit" id="button">Send</button>
+            <section id="makeup-banner"></section>
+            <section id="makeup">
+                <h2 class="section-heading">COSMETICS</h2>
+                <div class="grid-container">
+                    <div class="items-grid"></div>
+                    <div class="sidebar">
+                        <ul class="sidebar-nav-items">
+                            <button class="nav-item" data-filter="all">
+                                All
+                            </button>
+                            <button class="nav-item" data-filter="regular">
+                                Regular
+                            </button>
+                            <button class="nav-item" data-filter="gift-sets">
+                                Gift Sets
+                            </button>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="perfume-banner"></section>
+            <section id="perfumes">
+                <h2 class="section-heading">PERFUMES</h2>
+                <div class="grid-container">
+                    <div class="sidebar">
+                        <ul class="sidebar-nav-items">
+                            <button class="nav-item" data-filter="all">
+                                All
+                            </button>
+                            <button class="nav-item" data-filter="exclusive">
+                                Exclusive
+                            </button>
+                        </ul>
+                    </div>
+                    <div class="items-grid"></div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div id="store-name">
+                <h3>Mariam's Spa</h3>
             </div>
-          </form>
+            <div id="contact-info">
+                <p>
+                    123, Queen St. <br />
+                    Victoria Avenue East <br />
+                    Toronto, ON <br />
+                    M4E 1J3
+                </p>
+            </div>
+            <div id="subscription">
+                <h4>Subscribe to our Newletter!</h4>
+                <p>Don't miss out on the exclusive offers and deals</p>
+                <form
+                    action="https://formspree.io/mbjlakoz"
+                    method="POST"
+                    id="form"
+                    name="form"
+                >
+                    <div class="content">
+                        <input type="email" name="email" id="email" size="50" />
+                        <button type="submit" id="button">Send</button>
+                    </div>
+                </form>
+            </div>
+        </footer>
+        <div id="copyright">
+            <h5>&copy; 2019 All rights reserved. Mariam Bawa.</h5>
         </div>
-      </footer>
-      <div id="copyright">
-        <h5>&copy; 2019 All rights reserved. Mariam Bawa.</h5>
-      </div>
-      <script src="./js/navigation.js"></script>
-      <script src="./js/script.js"></script>
+        <script src="./js/navigation.js"></script>
+        <script src="./js/script.js"></script>
     </body>
 </html>
