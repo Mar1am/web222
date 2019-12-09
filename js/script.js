@@ -152,6 +152,18 @@ $(document).ready(() => {
             $(container).append($(productCard));
         });
     });
+
+    let filterProducts = (criteria, products) => {
+        products.forEach((product, index) => {
+            var data = $(product).data("data");
+
+            if(criteria == "all") {
+                $(product).show();
+            } else if(!data.tags.includes(criteria)) {
+                $(product).hide();
+            }
+        });
+    };
     
     
     
