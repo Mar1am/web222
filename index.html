@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <title>WEB222 Store</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <!--
@@ -62,302 +62,117 @@
         - https://fontawesome.com/ for icons
         - https://gallery.manypixels.co/ or https://undraw.co/illustrations for illustrations (SVG)
       -->
-      <header>
-        <nav id="top-nav">
-            <h1><a href="./index.html">Mariam's Spa</a></h1>
-          <ul class="main-nav-items">
-            <li><a href="#skincare">Skincare</a></li>
-            <li><a href="#makeup-banner">Cosmetics</a></li>
-            <li><a href="#perfume-banner">Perfumes</a></li>
-            <li class="contact"><a href="contact.html">Get in Touch!</a></li>
-          </ul>
-        </nav>
-        <section id="website-caption">
-          <p>Beautiful skin requires commitment, not a miracle. <br>
-            Mariam's Spa is here to help you fulfill your commitment.
-          </p>
-        </section>
-      </header>
-          
-      <main>
-        <section id="skincare">
-          <h2 class="section-heading">Skincare Products</h2>
-          <div class="grid-container">
-            <div class="sidebar">
-              <ul class="sidebar-nav-items">
-                <button class="nav-item" onclick="filterSelection('regular')">Regular</button>
-                <button class="nav-item">Naturals</button>
-              </ul>
-            </div>
-            <div class="items-grid">
-              <div class="item-row naturals">
-                <div class="item">
-                  <div class="img-container">
-                    <div class="buy-button">
-                        <button><a href="#">Buy</a></button>
-                    </div>
-                    <img src="images/skincare/naturals_1.jpg" alt="">
-                  </div>
-                  <div class="item-info">
-                    <h3 class="item-name">The Renaissance Circle</h3>
-                    <p class="item-description">Mango Mask <br>
-                    <span class="item-price">$5.99</span></p>
-                  </div>
-                </div>
-                <div class="item">
-                    <div class="img-container">
-                      <div class="buy-button">
-                          <button><a href="#">Buy</a></button>
-                      </div>
-                      <img src="images/skincare/naturals_2.jpg" alt="">
-                    </div>
-                    <div class="item-info">
-                      <h3 class="item-name">Shops of Youth</h3>
-                      <p class="item-description">Herbal Sheet Mask<br>
-                      <span class="item-price">$8.99</span></p>
-                    </div>
-                </div>
-                <div class="item">
-                      <div class="img-container">
-                        <div class="buy-button">
-                            <button><a href="#">Buy</a></button>
-                        </div>                        
-                        <img src="images/skincare/naturals_3.jpg" alt="">
-                      </div>
-                      <div class="item-info">
-                        <h3 class="item-name">Vya Naturals</h3>
-                        <p class="item-description">Vitamin C Serum<br>
-                        <span class="item-price">$7.99</span></p>
-                      </div>
-                </div>
-
-              </div>
-              <div class="item-row regulars">
-                  <div class="item">
-                    <div class="img-container">
-                      <div class="buy-button">
-                          <button><a href="#">Buy</a></button>
-                      </div>
-                      <img src="images/skincare/regular_1.jpg" alt="">
-                    </div>
-                    <div class="item-info">
-                      <h3 class="item-name">I'm Fabulous</h3>
-                      <p class="item-description">St. Barth Body Oil<br>
-                      <span class="item-price">$12.99</span></p>
-                    </div>
-                  </div>
-                  <div class="item">
-                      <div class="img-container">
-                        <div class="buy-button">
-                            <button><a href="#">Buy</a></button>
-                        </div>
-                        <img src="images/skincare/regular_2.jpg" alt="">
-                      </div>
-                      <div class="item-info">
-                        <h3 class="item-name">Therapeutic CBD</h3>
-                        <p class="item-description">Skin Balm<br>
-                        <span class="item-price">$14.99</span></p>
-                      </div>
-                  </div>
-                  <div class="item">
-                        <div class="img-container">
-                          <div class="buy-button">
-                              <button><a href="#">Buy</a></button>
-                          </div>                        
-                          <img src="images/skincare/regular_3.jpg" alt="">
-                        </div>
-                        <div class="item-info">
-                          <h3 class="item-name">The Brandless Company</h3>
-                          <p class="item-description">Facial Toner + Wipes<br>
-                          <span class="item-price">$16.99</span></p>
-                        </div>
-                  </div>
-                </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="makeup-banner">
-        </section>
-        <section id="makeup">
-          <h2 class="section-heading">COSMETICS</h2>
-          <div class="grid-container">
-            <div class="items-grid">
-              <div class="item-row makeup-single">
-                <div class="item">
-                  <div class="img-container">
-                    <div class="buy-button">
-                      <button><a href="#">Buy</a></button>
-                    </div>
-                    <img src="images/skincare/makeup_1.jpg" alt="">
-                  </div>
-                  <div class="item-info">
-                    <h3 class="item-name">Bourjois Rouge Edition'</h3>
-                    <p class="item-description">Velvet Lipstick<br>
-                    <span class="item-price">$9.96</span></p>
-                  </div>
-                </div>
-                <div class="item">
-                    <div class="img-container">
-                      <div class="buy-button">
-                          <button><a href="#">Buy</a></button>
-                      </div>
-                      <img src="images/skincare/makeup_2.jpg" alt="">
-                    </div>
-                    <div class="item-info">
-                      <h3 class="item-name">BECCA Ultimate</h3>
-                      <p class="item-description">Coral Pink Lipstick<br>
-                      <span class="item-price">$32.00</span></p>
-                    </div>
-                </div>
-                <div class="item">
-                      <div class="img-container">
-                        <div class="buy-button">
-                            <button><a href="#">Buy</a></button>
-                        </div>
-                        <img src="images/skincare/makeup_3.jpg" alt="">
-                      </div>
-                      <div class="item-info">
-                        <h3 class="item-name">Shavova Professional</h3>
-                        <p class="item-description">Foundation<br>
-                        <span class="item-price">$14.99</span></p>
-                      </div>
-                </div>
-              </div>
-              <div class="item-row makeup-giftset">
-                  <div class="item">
-                    <div class="img-container">
-                      <div class="buy-button">
-                        <button><a href="#">Buy</a></button>
-                      </div>
-                      <img src="images/skincare/bobby_brown_makeup_set.jpg" alt="">
-                    </div>
-                    <div class="item-info">
-                      <h3 class="item-name">Bobby Brown Makeup Set'</h3>
-                      <p class="item-description">13 pc Set<br>
-                      <span class="item-price">$49.99</span></p>
-                    </div>
-                  </div>
-                  <div class="item">
-                      <div class="img-container">
-                        <div class="buy-button">
-                            <button><a href="#">Buy</a></button>
-                        </div>
-                        <img src="images/skincare/brandless_brush_Set.jpg" alt="">
-                      </div>
-                      <div class="item-info">
-                        <h3 class="item-name">The Brandless Company</h3>
-                        <p class="item-description">4pc Makeup Brush Set<br>
-                        <span class="item-price">$25.99</span></p>
-                      </div>
-                  </div>
-                  <div class="item">
-                        <div class="img-container">
-                          <div class="buy-button">
-                              <button><a href="#">Buy</a></button>
-                          </div>
-                          <img src="images/skincare/chanel_set.jpg" alt="">
-                        </div>
-                        <div class="item-info">
-                          <h3 class="item-name">Chanel Cosmetic Set</h3>
-                          <p class="item-description">Makeup Gift Set<br>
-                          <span class="item-price">$45.99</span></p>
-                        </div>
-                  </div>
-                </div>
-            </div>
-            <div class="sidebar">
-                <ul class="sidebar-nav-items">
-                    <button class="nav-item">Regular</button>
-                    <button class="nav-item">Gift Sets</button>
+        <header>
+            <nav id="top-nav">
+                <h1><a href="./index.html">Mariam's Spa</a></h1>
+                <ul class="main-nav-items">
+                    <li><a href="#skincare">Skincare</a></li>
+                    <li><a href="#makeup-banner">Cosmetics</a></li>
+                    <li><a href="#perfume-banner">Perfumes</a></li>
+                    <li class="contact">
+                        <a href="contact.html">Get in Touch!</a>
+                    </li>
                 </ul>
+            </nav>
+            <div id="website-caption">
+                <p>
+                    Beautiful skin requires commitment, not a miracle. <br />
+                    Mariam's Spa is here to help you fulfill your commitment.
+                </p>
             </div>
-          </div>
-        </section>
-
-        <section id="perfume-banner">
-          </section>
-        <section id="perfumes">
-          <h2 class="section-heading">PERFUMES</h2>
-          <div class="grid-container">
-            <div class="sidebar">
-              <ul class="sidebar-nav-items">
-                <button class="nav-item">Exclusive</button>
-              </ul>
-            </div>
-            <div class="items-grid">
-              <div class="item-row perfumes">
-                <div class="item">
-                  <div class="img-container">
-                    <div class="buy-button">
-                      <button><a href="#">Buy</a></button>
-                    </div>
-                    <img src="images/skincare/perfumes_1.jpg" alt="">
-                  </div>
-                  <div class="item-info">
-                    <h3 class="item-name">Georgio Armani</h3>
-                    <p class="item-description">SUN di Gioia<br>
-                    <span class="item-price">$105.00</span></p>
-                  </div>
-                </div>
-                <div class="item">
-                    <div class="img-container">
-                      <div class="buy-button">
-                        <button><a href="#">Buy</a></button>
-                      </div>
-                      <img src="images/skincare/perfumes_2.jpg" alt="">
-                    </div>
-                    <div class="item-info">
-                      <h3 class="item-name">CHANEL Paris</h3>
-                      <p class="item-description">Gabrielle<br>
-                      <span class="item-price">$135.00</span></p>
-                    </div>
-                </div>
-                <div class="item">
-                      <div class="img-container">
-                        <div class="buy-button">
-                          <button><a href="#">Buy</a></button>
+        </header>
+        <main>
+            <div id="skincare">
+                <h2 class="section-heading">Skincare Products</h2>
+                <div class="grid-container">
+                    <div class="sidebar">
+                        <div class="sidebar-nav-items">
+                            <button class="nav-item" id="regular">
+                                Regular
+                            </button>
+                            <button class="nav-item" id="natural">
+                                Naturals
+                            </button>
+                            <button
+                                class="nav-item active-nav"
+                                id="all-skincare"
+                            >
+                                View All
+                            </button>
                         </div>
-                        <img src="images/skincare/perfumes_3.jpg" alt="">
-                      </div>
-                      <div class="item-info">
-                        <h3 class="item-name">L'Eau Laurissi</h3>
-                        <p class="item-description">Perfume<br>
-                        <span class="item-price">$152.00</span></p>
-                      </div>
+                    </div>
+                    <div class="items-grid"></div>
                 </div>
-              </div>
             </div>
-          </div>
-        </section>
-      </main>
 
-      <footer>
-        <div id="store-name">
-          <h3>Mariam's Spa</h3>
-        </div>
-        <div id="contact-info">
-          <p>
-            123, Queen St. <br>
-            Victoria Avenue East <br>
-            Toronto, ON <br>
-            M4E 1J3 
-          </p>
-        </div>
-        <div id="subscription">
-          <h4>Subscribe to our Newletter!</h4>
-          <p>Don't miss out on the exclusive offers and deals</p>
-          <form action="https://formspree.io/mbjlakoz" method="POST" id="form" name="form">
-            <div class="content">
-              <input type="email" name="email" id="email" size="50">
-              <button type="submit" id="button">Send</button>
+            <div id="makeup-banner"></div>
+            <div id="makeup">
+                <h2 class="section-heading">COSMETICS</h2>
+                <div class="grid-container">
+                    <div class="items-grid"></div>
+                    <div class="sidebar">
+                        <div class="sidebar-nav-items">
+                            <button class="nav-item" id="general">
+                                General
+                            </button>
+                            <button class="nav-item" id="giftset">
+                                Gift Sets
+                            </button>
+                            <button class="nav-item" id="all-makeup">
+                                View All
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </form>
+
+            <div id="perfume-banner"></div>
+            <div id="perfumes">
+                <h2 class="section-heading">PERFUMES</h2>
+                <div class="grid-container">
+                    <div class="sidebar">
+                        <div class="sidebar-nav-items">
+                            <button class="nav-item" id="perfume">
+                                Exclusive
+                            </button>
+                        </div>
+                    </div>
+                    <div class="items-grid"></div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div id="store-name">
+                <h3>Mariam's Spa</h3>
+            </div>
+            <div id="contact-info">
+                <p>
+                    123, Queen St. <br />
+                    Victoria Avenue East <br />
+                    Toronto, ON <br />
+                    M4E 1J3
+                </p>
+            </div>
+            <div id="subscription">
+                <h4>Subscribe to our Newletter!</h4>
+                <p>Don't miss out on the exclusive offers and deals</p>
+                <form
+                    action="https://formspree.io/mbjlakoz"
+                    method="POST"
+                    id="form"
+                    name="form"
+                >
+                    <div class="content">
+                        <input type="email" name="email" id="email" size="50" />
+                        <button type="submit" id="button">Send</button>
+                    </div>
+                </form>
+            </div>
+        </footer>
+        <div id="copyright">
+            <h5>&copy; 2019 All rights reserved. Mariam Bawa.</h5>
         </div>
-      </footer>
-      <div id="copyright">
-        <h5>&copy; 2019 All rights reserved. Mariam Bawa.</h5>
-      </div>
-      <script type="text/js" src="./script.js"></script>
+        <script src="./script.js"></script>
     </body>
 </html>

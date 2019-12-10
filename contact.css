@@ -1,12 +1,13 @@
 /** Add any CSS you need to this file. */
-@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Lato|Overpass&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Lato|Overpass&display=swap");
 
-html,body {
+html,
+body {
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
-    font-family: 'Overpass', sans-serif;
+    font-family: "Overpass", sans-serif;
     background-image: url("./images/contact_bg.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -25,10 +26,10 @@ html,body {
     border-radius: 5px;
 }
 
-#form-container .form-control{
+#form-container .form-control {
     display: flex;
     flex-direction: column;
-    margin: 0 0 15px;
+    margin: 0 0 25px;
     overflow: visible;
     text-align: left;
     width: 100%;
@@ -39,7 +40,10 @@ html,body {
     flex-direction: row;
 }
 
-#form-container .city, .postal, .country, #number {
+#form-container .city,
+.postal,
+.country,
+#number {
     width: 40%;
 }
 
@@ -47,14 +51,17 @@ html,body {
     width: 20%;
 }
 
-#form-container input, textarea {
+#form-container input,
+textarea {
     padding: 0.4em;
     background: transparent;
     border: none;
     border-bottom: 1px solid black;
 }
 
-#form-container input:focus, textarea:focus, button:focus {
+#form-container input:focus,
+textarea:focus,
+button:focus {
     outline: none;
 }
 
@@ -73,7 +80,7 @@ html,body {
 }
 
 #form-container .button {
-    padding: 1.0em;
+    padding: 1em;
     background-color: #040402;
     color: white;
     border: none;

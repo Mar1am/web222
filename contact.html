@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8" />
         <title>WEB222 Store - Contact</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="contact.css">
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="contact.css" />
     </head>
     <body>
         <!--    
@@ -50,25 +50,55 @@
         <div id="form-container">
             <form action="https://httpbin.org/post" method="POST">
                 <div class="form-control fname">
-                    <label for="fname">First Name <span class="required">*</span></label>
-                    <input type="text" name="fname" id="fname" autofocus required>
+                    <label for="fname"
+                        >First Name <span class="required">*</span></label
+                    >
+                    <input
+                        type="text"
+                        name="fname"
+                        id="fname"
+                        autofocus
+                        required
+                    />
                 </div>
                 <div class="form-control lname">
-                    <label for="lname">Last Name <span class="required">*</span></label>
-                    <input type="text" name="lname" id="lname" required>
+                    <label for="lname"
+                        >Last Name <span class="required">*</span></label
+                    >
+                    <input type="text" name="lname" id="lname" required />
                 </div>
                 <div class="form-control email">
-                    <label for="email">Email <span class="required">*</span></label>
-                    <input type="email" name="email" id="email" placeholder="johndoe@hotmail.com" required>
+                    <label for="email"
+                        >Email <span class="required">*</span></label
+                    >
+                    <input
+                        type="email"
+                        name="email"
+                        id="email_field"
+                        placeholder="johndoe@hotmail.com"
+                        required
+                    />
                 </div>
                 <div class="form-control street">
                     <label for="street">Street</label>
-                    <input type="text" name="street" id="street" placeholder="123, My Street" required>
+                    <input
+                        type="text"
+                        name="street"
+                        id="street"
+                        placeholder="123, My Street"
+                        required
+                    />
                 </div>
                 <div class="row">
                     <div class="form-control city">
                         <label for="city">City</label>
-                        <input type="text" name="city" id="city" list="city-list" required>
+                        <input
+                            type="text"
+                            name="city"
+                            id="city"
+                            list="city-list"
+                            required
+                        />
                         <datalist id="city-list">
                             <option value="Toronto"></option>
                             <option value="Mississuaga"></option>
@@ -78,35 +108,69 @@
                     </div>
                     <div class="form-control province">
                         <label for="province">Province</label>
-                        <input type="text" name="province" id="province" maxlength="2" size="2" placeholder="ON">
+                        <input
+                            type="text"
+                            name="province"
+                            id="province"
+                            maxlength="2"
+                            size="2"
+                            placeholder="ON"
+                        />
                     </div>
                 </div>
                 <div class="row">
                     <div class="form-control postal">
                         <label for="postal">Postal Code</label>
-                        <input type="text" name="postal" id="postal" 
-                        pattern="^[a-zA-Z][0-9][a-zA-Z][ -]?[0-9][a-zA-Z][0-9]$" placeholder="X1X-1X1" required>
+                        <input
+                            type="text"
+                            name="postal"
+                            id="postal"
+                            pattern="^[a-zA-Z][0-9][a-zA-Z][ -]?[0-9][a-zA-Z][0-9]$"
+                            placeholder="X1X-1X1"
+                            required
+                        />
                     </div>
                     <div class="form-control country">
                         <label for="country">Country</label>
-                        <input type="text" name="country" id="country">
+                        <input type="text" name="country" id="country" />
                     </div>
                 </div>
                 <div class="form-control phone">
                     <label for="number">Phone Number</label>
-                    <input type="number" id="number" name="number"
-                    pattern="\(?[0-9]{3}\)?[ -]?[0-9]{3}[ -]?[0-9]{3}$" placeholder="647-123-456" required>
-                    <p>Would you like to be phoned?
-                        <input type="checkbox" id="isPhone" name="isPhone">
+                    <input
+                        type="tel"
+                        id="number"
+                        name="number"
+                        pattern="\(?\d{3}\)?[ -]?\d{3}[ -]?\d{4}$"
+                        placeholder="647-123-456"
+                        required
+                    />
+                    <p>
+                        Would you like to be phoned?
+                        <input
+                            type="checkbox"
+                            id="isPhone"
+                            name="isPhone"
+                            checked
+                        />
                         <label for="isPhone">Yes</label>
                     </p>
                 </div>
                 <div class="form-control message">
-                    <label for="message">Message <span class="required">*</span></label>
-                    <textarea name="message" id="message" cols="30" rows="7" placeholder="Your message here.." required></textarea>
+                    <label for="message"
+                        >Message <span class="required">*</span></label
+                    >
+                    <textarea
+                        name="message"
+                        id="message"
+                        cols="30"
+                        rows="7"
+                        placeholder="Your message here.."
+                        required
+                    ></textarea>
                 </div>
-                <input type="hidden" name="myname" value="Mariam Bawa">
-                <input type="hidden" name="myID" value="149735185">
+                <input type="hidden" name="myname" value="Mariam Bawa" />
+                <input type="hidden" name="myID" value="149735185" />
                 <div class="form-control">
                     <button class="button" type="Submit">Send</button>
                 </div>
@@ -118,20 +182,30 @@
             </div>
             <div id="contact-info">
                 <p>
-                    123, Queen St. <br>
-                    Victoria Avenue East <br>
-                    Toronto, ON <br>
-                    M4E 1J3 
+                    123, Queen St. <br />
+                    Victoria Avenue East <br />
+                    Toronto, ON <br />
+                    M4E 1J3
                 </p>
             </div>
             <div id="subscription">
                 <h4>Subscribe to our Newletter!</h4>
                 <p>Don't miss out on the exclusive offers and deals</p>
-                <form action="https://formspree.io/mbjlakoz" method="POST" id="form" name="form">
-                <div class="content">
-                    <input type="email" name="email" id="email" size="50">
-                    <button type="submit" id="button">Send</button>
-                </div>
+                <form
+                    action="https://formspree.io/mbjlakoz"
+                    method="POST"
+                    id="form"
+                    name="form"
+                >
+                    <div class="content">
+                        <input
+                            type="email"
+                            name="email_field"
+                            id="email"
+                            size="50"
+                        />
+                        <button type="submit" id="button">Send</button>
+                    </div>
                 </form>
             </div>
         </footer>
