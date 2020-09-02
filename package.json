@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.11.2",
-    "bestzip": "^2.1.5",
+    "bestzip": "^2.1.7",
     "eslint": "^6.6.0",
     "html-validator-cli": "^7.0.0",
     "lite-server": "^2.5.4",
